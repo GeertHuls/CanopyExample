@@ -14,7 +14,7 @@ let ``Hightlight Olivercoding Image Test`` () =
 [<Fact>]
 let ``Test Canopy Page`` () =
     use browser = functions.start canopy.types.Chrome
-    functions.url "http://lefthandedgoat.github.io/canopy/testpages/" browser
+    functions.url "https://lefthandedgoat.github.io/canopy/testpages/" browser
     
     Assert.Equal("Welcome", (functions.element "#welcome" browser).Text)
     Assert.Equal("button not clicked", (functions.element "#button_clicked" browser).Text)
